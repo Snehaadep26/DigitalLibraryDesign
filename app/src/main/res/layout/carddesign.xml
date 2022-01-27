@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="179dp"
+    android:layout_height="170dp"
+    android:id="@+id/cardDesign"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="6dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/chapterText"
+            android:layout_width="52dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textColor="#636363"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dotText"
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="12dp"
+
+            android:layout_marginTop="2dp"
+            android:text="\u25CF"
+            app:layout_constraintBottom_toBottomOf="@+id/topicText"
+            app:layout_constraintStart_toEndOf="@+id/chapterText"
+            app:layout_constraintTop_toTopOf="@+id/topicText"
+            app:layout_constraintVertical_bias="1.0">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/topicText"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="#636363"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.29"
+            app:layout_constraintStart_toEndOf="@+id/dotText"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/infoText"
+            android:layout_width="141dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:text=""
+            android:textColor="#191919"
+            android:fontFamily="@font/roboto_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapterText">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/lectureImage"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.145"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoText">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/zeroText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#636363"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/lectureImage"
+            app:layout_constraintTop_toBottomOf="@+id/infoText"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/videoImage"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.231"
+            app:layout_constraintStart_toEndOf="@+id/zeroText1"
+            app:layout_constraintTop_toBottomOf="@+id/infoText">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/zeroText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#636363"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toEndOf="@+id/videoImage"
+            app:layout_constraintTop_toBottomOf="@+id/infoText">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/queImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.342"
+            app:layout_constraintStart_toEndOf="@+id/zeroText2"
+            app:layout_constraintTop_toBottomOf="@+id/infoText">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/zeroText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#636363"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/queImage"
+            app:layout_constraintTop_toBottomOf="@+id/infoText">
+
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
